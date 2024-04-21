@@ -38,8 +38,8 @@ function DocPage() {
             />
           </div>
           <div className="content pl-[160px] flex items-center h-[151px] justify-evenly sm:pl-[10px] sm:h-[240px]  sm:flex-col  bg-lightCream">
-            <div className="details w-[172px] h-[70px] ">
-              <div className="name font-semibold text-[18px] flex gap-2 items-center text-title font-poppins sm:text-[15px]">
+            <div className="details w-[172px] h-[70px] sm:ml-[70px] ">
+              <div className="name font-semibold text-[18px] flex gap-2 items-center text-title font-poppins sm:text-[15px] ">
                 Dr. Bruce Willis
                 <div className="img-wrapper w-[23px] h-[23px]">
                   <img
@@ -127,7 +127,7 @@ function DocPage() {
                   </div>
                 </div>
 
-                <div className="language w-[490px] h-[40px] flex  mt-[30px] ml-[40px] justify-evenly items-center font-nunito sm:text-[16px] sm:w-[90%] sm:flex-wrap sm:ml-[10px]">
+                <div className="language w-[490px] h-[40px] flex  mt-[30px] ml-[40px] justify-evenly items-center font-nunito sm:text-[16px] sm:w-[90%] sm:flex-wrap sm:ml-[10px] sm:justify-start sm:gap-2">
                   <p className="text-[20px] text-title font-medium sm:text-[16px]">
                     Language Spoken
                   </p>
@@ -198,16 +198,16 @@ function DocPage() {
                   </p>
                 </div>
                 <div className="content w-[580px]  ml-[40px] mt-[30px] flex flex-wrap gap-[10px] font-poppins sm:w-[90%] sm:ml-[10px]">
-                  <div className="select rounded-[19px] p-[10px] text-[16px] font-medium  bg-concerns text-green ">
+                  <div className="select rounded-[19px] p-[10px] text-[16px] font-medium  bg-concerns text-green sm:text-[14px] ">
                     <p>Skin Treatment</p>
                   </div>
-                  <div className="select rounded-[19px] p-[10px] text-[16px] font-medium  bg-concerns text-green">
+                  <div className="select rounded-[19px] p-[10px] text-[16px] font-medium  bg-concerns text-green sm:text-[14px]">
                     Pregnancy
                   </div>
-                  <div className="select rounded-[19px] p-[10px] text-[16px] font-medium  bg-concerns text-green">
+                  <div className="select rounded-[19px] p-[10px] text-[16px] font-medium  bg-concerns text-green sm:text-[14px]">
                     Period Doubts
                   </div>
-                  <div className="select rounded-[19px] p-[10px] text-[16px] font-medium  bg-concerns text-green sm:hidden">
+                  <div className="select rounded-[19px] p-[10px] text-[16px] font-medium  bg-concerns text-green sm:hidden ">
                     Endometriosis
                   </div>
                   <div className="select rounded-[19px] p-[10px] text-[16px] font-medium  bg-concerns text-green sm:hidden">
@@ -216,7 +216,7 @@ function DocPage() {
                   <div className="select rounded-[19px] p-[10px] text-[16px] font-medium  bg-concerns text-green sm:hidden">
                     Ovarian Cysts
                   </div>
-                  <div className="select rounded-[19px] h-[42px] px-[15px] flex items-center justify-center text-[16px]  border-[1px] font-medium  bg-white text-green">
+                  <div className="select rounded-[19px] h-[42px] px-[15px] flex items-center justify-center text-[16px]  border-[1px] font-medium sm:text-[14px]  bg-white text-green">
                     +5 More
                   </div>
                 </div>
@@ -229,7 +229,7 @@ function DocPage() {
                 </div>
                 <div className="content w-[580px]  ml-[40px] mt-[30px] flex flex-col gap-[20px] sm:ml-[10px]">
                   <div className="practise-year">
-                    <p className="text-[18px] text-start text-green font-semibold font-poppins sm:text-[16px]">
+                    <p className="text-[18px] text-start text-green font-semibold font-poppins sm:text-[14px]">
                       I HAVE BEEN IN PRACTISE FOR : 7+ YEARS
                     </p>
                   </div>
@@ -427,7 +427,7 @@ function DocPage() {
               </div>
             </div>
             <div className="right w-[564px] sm:w-[100%]">
-              <div className="card w-[564px] h-[950px] border-[1px] rounded-[29px] flex flex-col items-center py-[30px] gap-[30px] sm:w-[90%] sm:m-auto">
+              <div className="card w-[564px] h-[950px] border-[1px] rounded-[29px] flex flex-col items-center py-[30px] gap-[30px] sm:w-[90%] sm:m-auto sm:h-[1100px]">
                 <div className="header w-[530px] h-[56px] border-[1px] rounded-[15px] flex items-center justify-between px-[30px] sm:w-[95%] sm:px-[10px] ">
                   <p className="text-[20px] font-semibold text-title font-nunito">
                     Appointment Fee
@@ -444,20 +444,20 @@ function DocPage() {
                 </div>
                 <div className="select-sessions flex gap-[16px] sm:w-[95%]">
                   <div className="box1 flex flex-col items-center w-[158px] h-[70px] border-[1px] rounded-[10px] justify-center">
-                    <p className="text-[16px] text-modeText font-medium font-poppins">
+                    <p className="text-[16px] text-modeText font-medium font-poppins sm:text-[14px]">
                       In-Clinic
                     </p>
-                    <p className="text-[16px] text-modeSubtext font-nunito">45 Mins</p>
+                    <p className="text-[16px] text-modeSubtext font-nunito sm:text-[12px]">45 Mins</p>
                   </div>
                   <div className="box1 flex flex-col items-center w-[158px] h-[70px] border-[1px] rounded-[10px] justify-center border-green bg-bgLightGreen">
-                    <p className="text-[18px] text-green  font-medium font-poppins">Video</p>
-                    <p className="text-[16px] text-modeSubtext font-nunito">45 Mins</p>
+                    <p className="text-[18px] text-green  font-medium font-poppins sm:text-[14px]">Video</p>
+                    <p className="text-[16px] text-modeSubtext font-nunito sm:text-[12px]">45 Mins</p>
                   </div>
                   <div className="box1 flex flex-col items-center w-[158px] h-[70px] border-[1px] rounded-[10px] justify-center">
-                    <p className="text-[16px] text-modeText  font-medium font-poppins">
+                    <p className="text-[16px] text-modeText  font-medium font-poppins sm:text-[14px]">
                       Chat
                     </p>
-                    <p className="text-[16px] text-modeSubtext font-nunito">10 Mins</p>
+                    <p className="text-[16px] text-modeSubtext font-nunito sm:text-[12px]">10 Mins</p>
                   </div>
                 </div>
 
@@ -480,19 +480,19 @@ function DocPage() {
                       <img src={left} alt="" className=" w-[20px] h-[20px] " />
                     </div>
                     <div className="box1 flex flex-col items-center w-[123px] h-[70px] border-[1px] border-green rounded-[10px] justify-center bg-bgLightGreen">
-                      <p className="text-[16px] text-green font-semibold font-inter">
+                      <p className="text-[16px] text-green font-semibold font-inter sm:text-[12px]">
                         Mon, 10 Oct
                       </p>
                       <p className="text-[16px] text-modeSubtext h">10 slots</p>
                     </div>
                     <div className="box1 flex flex-col items-center w-[123px] h-[70px] border-[1px] rounded-[10px] justify-center">
-                      <p className="text-[16px] text-modeText  font-medium font-inter">
+                      <p className="text-[16px] text-modeText  font-medium font-inter sm:text-[12px]">
                         Tue , 11 Oct
                       </p>
                       <p className="text-[16px] text-red font-bold font-nunito">02 slots</p>
                     </div>
                     <div className="box1 flex flex-col items-center w-[123px] h-[70px] border-[1px] rounded-[10px] justify-center">
-                      <p className="text-[16px] text-modeText font-medium font-nunito">
+                      <p className="text-[16px] text-modeText font-medium font-nunito sm:text-[12px]">
                         Wed , 12 Oct
                       </p>
                       <p className="text-[16px] text-yellow font-bold font-inter">
@@ -505,27 +505,27 @@ function DocPage() {
                   </div>
                   <div className="timing w-[500px] h-[160px] sm:w-[100%]">
                     <div className="title">
-                      <p className="text-[18px]  text-start px-[10px] font-bold text-title font-nunito">
+                      <p className="text-[18px]  text-start px-[10px] font-bold text-title font-nunito ">
                         Morning
                       </p>
                     </div>
                     <div className="select-timing flex flex-wrap gap-[12px] text-[16px] mt-[10px] text-timing font-inter">
-                      <div className="box p-[12px] border-[1px] rounded-[22px] ">
+                      <div className="box p-[12px] border-[1px] rounded-[22px]  sm:text-[12px]">
                         09:00 AM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
                         09:30 AM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
                         10:00 AM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
                         10:15 AM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
                         10:45 AM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px] bg-green text-heroText2">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] bg-green text-heroText2 sm:text-[12px]">
                         11:00 AM
                       </div>
                     </div>
@@ -536,20 +536,20 @@ function DocPage() {
                         Evening
                       </p>
                     </div>
-                    <div className="select-timing flex flex-wrap gap-[12px] mt-[10px] text-[16px] text-timing font-inter">
-                      <div className="box p-[14px] border-[1px] rounded-[22px]">
+                    <div className="select-timing flex flex-wrap gap-[12px] mt-[10px] text-[16px] text-timing font-inter ">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
                         04:00 PM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
                         04:15 PM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
                         04:30 PM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
                         04:45 PM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
                         05:15 PM
                       </div>
                     </div>
