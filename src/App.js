@@ -8,7 +8,7 @@ import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-full">
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
