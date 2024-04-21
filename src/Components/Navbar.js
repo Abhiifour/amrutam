@@ -2,10 +2,11 @@ import React from "react";
 import logo from "../assests/amrutamlogo.png";
 import ham from "../assests/hamburger.png";
 import { useNavigate } from "react-router-dom";
-
+// Navbar top menu
 function Navbar() {
   const navigate = useNavigate();
   return (
+    
     <div className="nav-main flex items-center justify-center  h-[94px] bg-cream sm:w-[100%] sm:h-[104px] transition-all">
       <div className="inner-nav w-[1232px] h-[56px] flex items-center justify-between sm:w-[100%]">
         <div className="nav-left flex w-[669px] h-[49px] gap-[80px] items-center sm:w-[100%] sm:h-[104px]  sm:gap-[60px]">
@@ -13,6 +14,7 @@ function Navbar() {
           <div className="img-wrapper w-[32px] h-[14px]">
             <img src={ham} alt="" className="w-[32px] h-[14px]" />
           </div>
+        
         </div>
           <div className="logo-section">
             <div className="img-wrapper w-[259px] h-[49px] sm:w-[122px] sm:h-[24px]">

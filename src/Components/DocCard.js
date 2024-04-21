@@ -7,6 +7,7 @@ import comment from "../assests/comment.png";
 import { useNavigate } from "react-router-dom";
 
 function DocCard() {
+  // DOCTOR CARD 
   const navigate = useNavigate();
   return (
     <div className="doc-card-main w-[356px] h-[561px] rounded-[30px] border-[1px] px-[30px] py-[28px] bg-cream shadow-md ">
@@ -63,10 +64,10 @@ function DocCard() {
             </div>
           </div>
           <div className="bottom-section flex flex-col gap-[10px] font-nunito">
-            <div className="view w-[290px] h-[36px] rounded-[8px] border-[1px] border-green bg-white text-green flex justify-center cursor-pointer items-center font-semibold text-[16px]" onClick = {()=>navigate("/Doc")}>
+            <div className="view w-[290px] h-[36px] rounded-[8px] border-[1px] border-green bg-white text-green flex justify-center cursor-pointer items-center font-semibold text-[16px] " onClick = {()=>navigate("/Doc")}>
               View Profile
             </div>
-            <div className="book  w-[290px] h-[44px] rounded-[8px]  flex justify-center items-center font-semibold text-[16px] bg-green text-heroText2">
+            <div className="book  w-[290px] h-[44px] rounded-[8px]  flex justify-center items-center font-semibold text-[16px] bg-green cursor-pointer text-heroText2">
               Book a Consultation
             </div>
           </div>

@@ -15,13 +15,13 @@ import review from "../assests/review.png";
 import calender from "../assests/calender.png";
 import left from "../assests/left.png";
 import right from "../assests/right.png";
-
+// Done with imports .
 function DocPage() {
+  // DOCTOR PROFILE
   return (
-    <div className="doc-detail-main sm:w-[100%]">
-      
-
+    <div className="doc-detail-main sm:w-[100%] transition-all">
       <div className="doc-profile w-[1220px] m-auto mt-[50px] sm:w-[100%] ">
+        {/** this section contains the profile of the doctors - image , followers */}
         <div className="img-wrapper w-[1220px] h-[155px] sm:w-[100%] sm:h-[100px]">
           <img
             src={profilecover}
@@ -37,6 +37,7 @@ function DocPage() {
               className=" w-[159px] h-[159px] sm:w-[100px] sm:h-[100px]"
             />
           </div>
+          {/** basic informations */}
           <div className="content pl-[160px] flex items-center h-[151px] justify-evenly sm:pl-[10px] sm:h-[240px]  sm:flex-col  bg-lightCream">
             <div className="details w-[172px] h-[70px] sm:ml-[70px] ">
               <div className="name font-semibold text-[18px] flex gap-2 items-center text-title font-poppins sm:text-[15px] ">
@@ -94,19 +95,20 @@ function DocPage() {
                 </div>
               </div>
             </div>
-            <div className="book w-[270px] h-[59px]  rounded-[8px] flex justify-center items-center text-[20px] bg-green text-heroText2 font-medium font-inter sm:text-[16px] sm:h-[50px] sm:w-[240px]">
+            <div className="book w-[270px] h-[59px]  rounded-[8px] flex justify-center items-center cursor-pointer text-[20px] bg-green text-heroText2 font-medium font-inter sm:text-[16px] sm:h-[50px] sm:w-[240px] hover:bg-white hover:text-green hover:border-green hover:border-[1px] transition-all">
               Book an Appointment
             </div>
           </div>
           <div className="doc-documents mt-[30px] flex gap-[30px] sm:flex-col">
             <div className="left w-[628px] sm:w-[100%] sm:flex sm:flex-col sm:items-center">
+              {/** CARD1 DISPLAYED ON DOCTOR PROFILE PAGE */}
               <div className="card1 w-[628px] h-[410px] rounded-[18px] border-[1px] overflow-hidden sm:w-[90%]">
                 <div className="title h-[60px] flex items-center justify-between px-[40px] bg-gradient-to-r from-grey2 via-grey2 to-grey1 sm:px-[10px]">
                   <p className="text-[24px] font-semibold pl-[5px] text-docTitle font-nunito sm:text-[20px]">
                     A Little About me
                   </p>
                   <div className="follow h-[36px] flex gap-[10px] items-center w-[100px] border-[1px] rounded-[10px] justify-center bg-white border-green">
-                    <p className="text-[16px] text-inputText font-medium font-poppins">
+                    <p className="text-[16px] text-inputText font-medium font-poppins hover:text-green hover:font-bold transition-all cursor-pointer">
                       Follow
                     </p>
                     <div className="img-wrapper h-[14px] w-[14px]">
@@ -123,11 +125,13 @@ function DocPage() {
                   </p>
                   <div className="read-more flex justify-between items-center py-[4px] sm:hidden  ">
                     <div className=" w-[437px] h-[0.5px] bg-stone-300 sm:w-[80%]"></div>
-                    <p className="text-name font-medium underline font-poppins sm:text-[14px]">Read More</p>
+                    <p className="text-name font-medium underline font-poppins sm:text-[14px]">
+                      Read More
+                    </p>
                   </div>
                 </div>
 
-                <div className="language w-[490px] h-[40px] flex  mt-[30px] ml-[40px] justify-evenly items-center font-nunito sm:text-[16px] sm:w-[100%] sm:flex-wrap sm:ml-[10px] sm:justify-start sm:gap-2">
+                <div className="language w-[490px] h-[40px] flex  mt-[30px] ml-[40px] justify-evenly items-center font-nunito sm:text-[16px] sm:w-[100%] sm:flex-wrap sm:ml-[10px] sm:pl-[7px] sm:justify-start sm:gap-2">
                   <p className="text-[20px] text-title font-medium sm:text-[15px]">
                     Language Spoken
                   </p>
@@ -141,10 +145,11 @@ function DocPage() {
                     Telugu
                   </div>
                 </div>
-                <div className="social-media w-[200px] h-[40px] ml-[40px] mt-[30px] sm:ml-[10px]">
+                <div className="social-media w-[200px] h-[40px] ml-[40px] mt-[30px] sm:ml-[14px]">
                   <img src={social} alt="" className=" w-[200px] h-[40px]" />
                 </div>
               </div>
+              {/** CARD2 DISPLAYED ON DOCTOR PROFILE PAGE */}
               <div className="card2 w-[628px] h-[260px] rounded-[18px] border-[1px] mt-[30px] overflow-hidden sm:w-[90%] sm:h-[200px]">
                 <div className="title h-[60px] flex items-center justify-start px-[40px] bg-gradient-to-r from-grey2 via-grey2 to-grey1 sm:px-[10px] ">
                   <p className="text-[24px] font-semibold pl-[5px] text-docTitle font-nunito sm:text-[20px]">
@@ -154,7 +159,11 @@ function DocPage() {
                 <div className="content w-[455px] h-[130px] ml-[40px] mt-[30px] flex justify-evenly gap-[10px] font-nunito sm:ml-[10px] sm:w-[90%] sm:flex-wrap">
                   <div className="banner flex flex-col items-center gap-1">
                     <div className="img-wrapper w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]">
-                      <img src={frame1} alt="" className="w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]" />
+                      <img
+                        src={frame1}
+                        alt=""
+                        className="w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]"
+                      />
                     </div>
 
                     <p className="text-[16px] font-medium text-title">
@@ -163,7 +172,11 @@ function DocPage() {
                   </div>
                   <div className="banner flex flex-col items-center gap-1">
                     <div className="img-wrapper w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]">
-                      <img src={frame2} alt="" className="w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]" />
+                      <img
+                        src={frame2}
+                        alt=""
+                        className="w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]"
+                      />
                     </div>
 
                     <p className="text-[16px] font-medium text-title">
@@ -172,7 +185,11 @@ function DocPage() {
                   </div>
                   <div className="banner flex flex-col items-center gap-1">
                     <div className="img-wrapper w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]">
-                      <img src={frame3} alt="" className="w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]" />
+                      <img
+                        src={frame3}
+                        alt=""
+                        className="w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]"
+                      />
                     </div>
 
                     <p className="text-[16px] font-medium text-title">
@@ -181,7 +198,11 @@ function DocPage() {
                   </div>
                   <div className="banner flex flex-col items-center gap-1 sm:hidden ">
                     <div className="img-wrapper w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]">
-                      <img src={frame4} alt="" className="w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]" />
+                      <img
+                        src={frame4}
+                        alt=""
+                        className="w-[100px] h-[96px] sm:w-[70px] sm:h-[70px]"
+                      />
                     </div>
 
                     <p className="text-[16px] font-medium text-title">
@@ -190,7 +211,7 @@ function DocPage() {
                   </div>
                 </div>
               </div>
-
+              {/** CARD3 DISPLAYED ON DOCTOR PROFILE PAGE */}
               <div className="card3 w-[628px] h-[222px] rounded-[18px] border-[1px] mt-[30px] overflow-hidden sm:w-[90%]">
                 <div className="title h-[60px] flex items-center justify-start px-[40px] bg-gradient-to-r from-grey2 via-grey2 to-grey1 sm:px-[10px]">
                   <p className="text-[24px] font-semibold pl-[5px] text-docTitle font-nunito sm:text-[20px]">
@@ -221,6 +242,7 @@ function DocPage() {
                   </div>
                 </div>
               </div>
+              {/** CARD4 DISPLAYED ON DOCTOR PROFILE PAGE */}
               <div className="card4 w-[628px] h-[330px] rounded-[18px] border-[1px] mt-[30px] overflow-hidden sm:w-[90%]">
                 <div className="title h-[60px] flex items-center justify-start px-[40px] sm:px-[10px] overflow-hidden bg-gradient-to-r from-grey2 via-grey2 to-grey1">
                   <p className="text-[22px] font-semibold pl-[5px] text-docTitle font-nunito sm:text-[20px]">
@@ -268,6 +290,7 @@ function DocPage() {
                   </div>
                 </div>
               </div>
+              {/** CARD5 DISPLAYED ON DOCTOR PROFILE PAGE */}
               <div className="card5 w-[628px] h-[520px] rounded-[18px] border-[1px] mt-[30px] overflow-hidden sm:w-[90%]">
                 <div className="title h-[60px] flex items-center justify-start px-[40px] overflow-hidden bg-gradient-to-r from-grey2 via-grey2 to-grey1 sm:px-[10px]">
                   <p className="text-[24px] font-semibold pl-[5px] text-docTitle font-nunito sm:text-[20px]">
@@ -426,6 +449,7 @@ function DocPage() {
                 </div>
               </div>
             </div>
+            {/** Section for booking appointment */}
             <div className="right w-[564px] sm:w-[100%]">
               <div className="card w-[564px] h-[950px] border-[1px] rounded-[29px] flex flex-col items-center py-[30px] gap-[30px] sm:w-[90%] sm:m-auto sm:h-[1050px] sm:mb-[50px]">
                 <div className="header w-[530px] h-[56px] border-[1px] rounded-[15px] flex items-center justify-between px-[30px] sm:w-[95%] sm:px-[10px] ">
@@ -443,21 +467,29 @@ function DocPage() {
                   <div className="line w-[232px] h-[0.5px] bg-stone-200 sm:hidden"></div>
                 </div>
                 <div className="select-sessions flex gap-[16px] sm:w-[95%]">
-                  <div className="box1 flex flex-col items-center w-[158px] h-[70px] border-[1px] rounded-[10px] justify-center">
-                    <p className="text-[16px] text-modeText font-medium font-poppins sm:text-[14px]">
+                  <div className="box1 flex flex-col items-center w-[158px] h-[70px] border-[1px] rounded-[10px] justify-center cursor-pointer hover:text-green hover:border-green hover:bg-bgLightGreen">
+                    <p className="text-[16px] text-modeText font-medium font-poppins sm:text-[14px] ">
                       In-Clinic
                     </p>
-                    <p className="text-[16px] text-modeSubtext font-nunito sm:text-[12px]">45 Mins</p>
+                    <p className="text-[16px] text-modeSubtext font-nunito sm:text-[12px]">
+                      45 Mins
+                    </p>
                   </div>
-                  <div className="box1 flex flex-col items-center w-[158px] h-[70px] border-[1px] rounded-[10px] justify-center border-green bg-bgLightGreen">
-                    <p className="text-[18px] text-green  font-medium font-poppins sm:text-[14px]">Video</p>
-                    <p className="text-[16px] text-modeSubtext font-nunito sm:text-[12px]">45 Mins</p>
+                  <div className="box1 flex flex-col items-center w-[158px] h-[70px] border-[1px] rounded-[10px] justify-center cursor-pointer border-green bg-bgLightGreen">
+                    <p className="text-[18px] text-green  font-medium font-poppins sm:text-[14px]">
+                      Video
+                    </p>
+                    <p className="text-[16px] text-modeSubtext font-nunito sm:text-[12px]">
+                      45 Mins
+                    </p>
                   </div>
-                  <div className="box1 flex flex-col items-center w-[158px] h-[70px] border-[1px] rounded-[10px] justify-center">
+                  <div className="box1 flex flex-col items-center w-[158px] h-[70px] border-[1px] rounded-[10px] cursor-pointer justify-center hover:text-green hover:border-green hover:bg-bgLightGreen">
                     <p className="text-[16px] text-modeText  font-medium font-poppins sm:text-[14px]">
                       Chat
                     </p>
-                    <p className="text-[16px] text-modeSubtext font-nunito sm:text-[12px]">10 Mins</p>
+                    <p className="text-[16px] text-modeSubtext font-nunito sm:text-[12px]">
+                      10 Mins
+                    </p>
                   </div>
                 </div>
 
@@ -471,36 +503,48 @@ function DocPage() {
                       <img
                         src={calender}
                         alt=""
-                        className="w-[44px] h-[44px]"
+                        className="w-[44px] h-[44px] cursor-pointer"
                       />
                     </div>
                   </div>
                   <div className="time-corouse flex items-center gap-[8px] w-[530px] h-[120px] border-[1px] rounded-[21px] justify-center sm:w-[100%]">
-                    <div className="img-wrapper w-[20px] h-[20px] mr-[10px]">
-                      <img src={left} alt="" className=" w-[20px] h-[20px] " />
+                    <div className="img-wrapper w-[20px] h-[20px] mr-[10px] sm:h-[15px]">
+                      <img
+                        src={left}
+                        alt=""
+                        className=" w-[20px] h-[20px] sm:h-[15px] "
+                      />
                     </div>
-                    <div className="box1 flex flex-col items-center w-[123px] h-[70px] border-[1px] border-green rounded-[10px] justify-center bg-bgLightGreen">
+                    <div className="box1 flex flex-col items-center w-[123px] cursor-pointer h-[70px] border-[1px] border-green rounded-[10px] justify-center bg-bgLightGreen">
                       <p className="text-[16px] text-green font-semibold font-inter sm:text-[12px]">
                         Mon, 10 Oct
                       </p>
-                      <p className="text-[16px] text-modeSubtext h">10 slots</p>
+                      <p className="text-[16px] text-modeSubtext sm:text-[12px]">
+                        10 slots
+                      </p>
                     </div>
-                    <div className="box1 flex flex-col items-center w-[123px] h-[70px] border-[1px] rounded-[10px] justify-center">
+                    <div className="box1 flex flex-col items-center w-[123px] cursor-pointer h-[70px] border-[1px] rounded-[10px] justify-center hover:text-green hover:border-green hover:bg-bgLightGreen">
                       <p className="text-[16px] text-modeText  font-medium font-inter sm:text-[12px]">
                         Tue , 11 Oct
                       </p>
-                      <p className="text-[16px] text-red font-bold font-nunito">02 slots</p>
+                      <p className="text-[16px] text-red font-bold font-nunito sm:text-[12px]">
+                        02 slots
+                      </p>
                     </div>
-                    <div className="box1 flex flex-col items-center w-[123px] h-[70px] border-[1px] rounded-[10px] justify-center">
+                    <div className="box1 flex flex-col items-center w-[123px] cursor-pointer h-[70px] border-[1px] rounded-[10px] justify-center hover:text-green hover:border-green hover:bg-bgLightGreen">
                       <p className="text-[16px] text-modeText font-medium font-nunito sm:text-[12px]">
                         Wed , 12 Oct
                       </p>
-                      <p className="text-[16px] text-yellow font-bold font-inter">
+                      <p className="text-[16px] text-yellow font-bold font-inter sm:text-[12px]">
                         05 slots
                       </p>
                     </div>
-                    <div className="img-wrapper w-[20px] h-[20px] ml-[10px]">
-                      <img src={right} alt="" className=" w-[20px] h-[20px]" />
+                    <div className="img-wrapper w-[20px] h-[20px] ml-[10px] sm:h-[15px]">
+                      <img
+                        src={right}
+                        alt=""
+                        className=" w-[20px] h-[20px] sm:h-[15px]"
+                      />
                     </div>
                   </div>
                   <div className="timing w-[500px] h-[160px] sm:w-[100%]">
@@ -510,19 +554,19 @@ function DocPage() {
                       </p>
                     </div>
                     <div className="select-timing flex flex-wrap gap-[12px] text-[16px] mt-[10px] text-timing font-inter">
-                      <div className="box p-[12px] border-[1px] rounded-[22px]  sm:text-[12px]">
+                      <div className="box p-[12px] border-[1px] rounded-[22px]  sm:text-[12px] hover:bg-green hover:text-heroText2 cursor-pointer transition-all">
                         09:00 AM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px] hover:bg-green hover:text-heroText2 cursor-pointer transition-all">
                         09:30 AM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px] hover:bg-green hover:text-heroText2 cursor-pointer transition-all">
                         10:00 AM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px] hover:bg-green hover:text-heroText2 cursor-pointer transition-all">
                         10:15 AM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px] hover:bg-green hover:text-heroText2 cursor-pointer transition-all">
                         10:45 AM
                       </div>
                       <div className="box p-[14px] border-[1px] rounded-[22px] bg-green text-heroText2 sm:text-[12px]">
@@ -536,30 +580,28 @@ function DocPage() {
                         Evening
                       </p>
                     </div>
-                    <div className="select-timing flex flex-wrap gap-[12px] mt-[10px] text-[16px] text-timing font-inter ">
-                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
+                    <div className="select-timing flex flex-wrap gap-[12px] mt-[10px] text-[16px] text-timing font-inter transition-all ">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px] hover:bg-green hover:text-heroText2 cursor-pointer transition-all">
                         04:00 PM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px] hover:bg-green hover:text-heroText2 cursor-pointer transition-all ">
                         04:15 PM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px] hover:bg-green hover:text-heroText2 cursor-pointer transition-all">
                         04:30 PM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px] hover:bg-green hover:text-heroText2 cursor-pointer transition-all">
                         04:45 PM
                       </div>
-                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px]">
+                      <div className="box p-[14px] border-[1px] rounded-[22px] sm:text-[12px] hover:bg-green hover:text-heroText2 cursor-pointer transition-all">
                         05:15 PM
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="book-button w-[470px] h-[60px]  rounded-[8px] flex justify-center items-center bg-green sm:w-[60%]">
-                  <p className="text-[20px] text-heroText2 font-medium font-inter sm:text-[16px]">
-                    Make An Appointment
-                  </p>
+                <div className="book-button w-[470px] h-[60px] text-[20px] text-heroText2 font-medium font-inter sm:text-[16px] rounded-[8px] flex justify-center items-center bg-green sm:w-[60%] transition-all cursor-pointer hover:bg-white hover:text-green hover:border-[1px] hover:border-green">
+                  Make An Appointment
                 </div>
               </div>
             </div>

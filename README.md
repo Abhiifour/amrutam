@@ -1,3 +1,29 @@
+# AMRUTAM 
+
+✈️ This project is created as an Assignment .
+
+# TECH STACKS 
+
+Implemented using tailwindCSS, ReactJs , Router-Dom . 
+
+## FONTS AND COLOURS PALETS .
+
+All the imports are done in tailwind.config.js . Refer src/tailwind.config.js for Fonts and Style related informations .
+
+## USAGE 
+
+This Application have 3 Pages .
+
+In the menu section -
+
+▶️ Home for the Landing Page 
+▶️ Find Doctors for finding best options.
+▶️ Doc for Doctor's information and Booking Appointments.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

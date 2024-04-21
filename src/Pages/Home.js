@@ -31,17 +31,22 @@ import social from "../assests/sociallink.png";
 
 import model from "../assests/model.jpg";
 import { useNavigate } from "react-router-dom";
+
+// Done with imports 
+
 function Home() {
   const navigate = useNavigate();
   return (
     <div className="home-main w-full transition-all">
+      {/** For Large Screens */}
       <div className="web  block sm:hidden ">
+        {/** Landing page main section which contains image and tagline . top most component on landing page  */}
         <div className="hero-section h-[640px] flex relative">
           <div className="left w-[650px] bg-hero transition-all"></div>
           <div className="img-wrapper w-[870px] h-[640px] transition-all ">
             <img src={herobanner} alt="" className="w-[870px] h-[640px]" />
           </div>
-
+          {/** text-field is the text which is postioned absolute on the therapy image . */}
           <div className="content absolute w-full h-[640px] flex items-center pl-[100px]  bg-gradient-to-r from-gradient1 via-gradient2 to-gradient-3">
             <div className="content-box w-[900px] h-[370px] flex flex-col gap-[16px]">
               <p className="text-[28px] text-start text-heroText font-normal font-Montserrat">
@@ -63,11 +68,12 @@ function Home() {
                 className="button w-[300px] h-[60px] rounded-[16px] flex justify-center text-[20px] items-center  mt-[20px] hover:font-bold text-heroText2 font-inter hover:text-green bg-green cursor-pointer transition hover:bg-white "
                 onClick={() => navigate("/Find")}
               >
-               BOOK AN APPOINTMENT
+                BOOK AN APPOINTMENT
               </div>
             </div>
           </div>
         </div>
+        {/** section which contains icons about safety and experience */}
         <div className="icons h-[147px]  flex justify-center items-center gap-[10px] bg-cream font-nunito">
           <div className="box w-[283px] flex items-center">
             <div className="img-wrapper w-[140px] h-[80px]">
@@ -102,7 +108,7 @@ function Home() {
             </p>
           </div>
         </div>
-
+        {/** section to display benifits of yoga */}
         <div className="yogo-banner h-[840px] flex flex-col items-center gap-[50px] pt-[40px] ">
           <div className="header w-[800px] h-[160px] flex flex-col items-center gap-[20px]">
             <div className="text-[48px] text-green font-Roboto font-bold  ">
@@ -202,6 +208,7 @@ function Home() {
             </div>
           </div>
         </div>
+        {/** section - WHAT SETS AYURVEDIC CONSULTATION APART .*/}
         <div className="know-more-section h-[850px] bg-cream pt-[60px]">
           <p className="text-[48px] text-green font-Roboto font-bold underline decoration-[5px]  decoration-underline px-[20px] underline-offset-2">
             What sets Ayurvedic consultations apart?
@@ -254,6 +261,7 @@ function Home() {
             </div>
           </div>
         </div>
+        {/** section for offering consultation option */}
         <div className="book h-[590px] relative">
           <div className="img h-[590px] w-full">
             <img src={book} alt="" className="h-[590px] w-full" />
@@ -272,6 +280,7 @@ function Home() {
             </div>
           </div>
         </div>
+        {/**  more about OUR AYURVEDIC APPROACH */}
         <div className="ayurvedic-approach h-[750px] flex flex-col items-center w-full pt-[80px] gap-[70px]">
           <div className="header w-[800px] h-[160px] flex flex-col items-center">
             <p className="text-[48px] text-green font-semibold font-Roboto underline decoration-[5px]  decoration-underline px-[20px] underline-offset-2">
@@ -337,6 +346,7 @@ function Home() {
             </div>
           </div>
         </div>
+        {/** section to display people experiance and reviews */}
         <div className="testimonial h-[700px] w-full flex flex-col py-[80px] items-center bg-cream ">
           <div className="header">
             <p className="text-[48px] text-green font-semibold font-Roboto underline decoration-[5px]  decoration-underline px-[20px] underline-offset-2">
@@ -496,6 +506,8 @@ function Home() {
             <img src={dot} alt="" className="w-[76px] h-[9px]" />
           </div>
         </div>
+
+        {/** AYURVEDIC EXPERTS */}
         <div className="meet-instructor w-full h-[840px]  flex flex-col pt-[60px] items-center ">
           <div className="header">
             <p className="text-[48px] text-green font-semibold font-Roboto underline decoration-[5px]  decoration-underline px-[20px] underline-offset-2">
@@ -632,7 +644,7 @@ function Home() {
             </div>
           </div>
         </div>
-
+        {/** Advetisment of Mobile Apps*/}
         <div className="download-app h-[700px] flex justify-center items-center bg-cream mt-[30px]">
           <div className="left w-[574px] h-[484px]">
             <p className="text-[48px]  text-start font-bold text-green font-Roboto">
@@ -665,6 +677,7 @@ function Home() {
             <img src={mobile} alt="" className="w-[734px] h-[565px]" />
           </div>
         </div>
+        {/** Quick Links */}
         <div className="footer h-[500px] w-full flex justify-center items-start bg-lightestGreen font-Roboto gap-[50px] pt-[120px]">
           <div className="left flex flex-col w-[400px] items-start text-[18px] gap-[10px] ">
             <p className="text-green font-bold">Get In Touch</p>
@@ -716,17 +729,20 @@ function Home() {
           </div>
         </div>
       </div>
+      {/** For Small Screens */}
       <div className="mobile  hidden sm:block">
+        {/** Landing page main section which contains image and tagline . top most component on landing page  */}
         <div className="hero-section w-full h-[540px] relative">
           <div className="img-wrapper w-full h-[540px]">
             <img src={model} alt="" className="w-full h-[540px]" />
           </div>
+          {/** text-field is the text which is postioned absolute on the therapy image . */}
           <div className="text-field absolute bg-gradient-to-b from-gradient1 via-gradient to-gradient3 h-[540px] w-full bottom-0 flex justify-center items-center">
             <div className="content-box  flex flex-col gap-[16px] w-[330px] h-[360px] pr-[30px]">
-              <p className="text-[18px] text-start text-heroText font-normal font-Montserrat">
+              <p className="text-[18px] text-start text-heroText  font-Montserrat font-light">
                 Namaste, Welcome to Amrutam
               </p>
-              <p className="text-[24px] text-start text-heroText2 font-Roboto">
+              <p className="text-[24px] text-start text-heroText2 font-Roboto font-bold">
                 Step into Holistic Healing with{" "}
                 <span className="px-[2px] border-b-[3px] text-heroText ">
                   Ayurveda
@@ -748,6 +764,7 @@ function Home() {
               </div>
             </div>
           </div>
+          {/** section which contains icons about safety and experience */}
           <div className="icons flex flex-col justify-center items-center  font-bold py-[20px] bg-cream font-nunito w-[100%] border-y-[0.5px]">
             <div className="box w-full flex py-[16px] gap-2 items-center px-[40px] border-b-[0.5px]">
               <div className="img-wrapper w-[120px] h-[80px]">
@@ -784,6 +801,7 @@ function Home() {
               </p>
             </div>
           </div>
+          {/** section to display benifits of yoga */}
           <div className="yoga w-[100%] py-[40px] flex flex-col gap-[20px]">
             <p className="text-[32px] text-green font-Roboto font-bold px-[20px]">
               Discover Ayurveda’s Magic With Us
@@ -879,6 +897,8 @@ function Home() {
               </div>
             </div>
           </div>
+
+          {/** section - WHAT SETS AYURVEDIC CONSULTATION APART .*/}
           <div className="know-more flex flex-col  py-[40px] bg-cream ">
             <p className="text-[32px] text-green font-Roboto font-bold">
               What sets Ayurvedic consultations apart?
@@ -932,6 +952,7 @@ function Home() {
               </div>
             </div>
           </div>
+          {/** section for offering consultation option */}
           <div className="banner h-[500px] relative mt-[40px]">
             <div className="img h-[500px] w-[100%]">
               <img src={book} alt="" className="h-[500px] w-[100%]" />
@@ -941,14 +962,15 @@ function Home() {
                 <p className="text-[32px]  text-creamText font-Roboto font-bold">
                   Ready to restore harmony in your mind, body and spirit?
                 </p>
-                <div className="book-button px-[20px] py-[24px] rounded-[16px] flex justify-center items-center bg-green shadow-md">
-                  <p className="text-[18px] text-heroText2 font-inter">
+                <div className="book-button px-[20px] py-[14px] rounded-[16px] flex justify-center items-center bg-green shadow-md">
+                  <p className="text-[18px] text-heroText2 font-inter ">
                     Book a Consultation
                   </p>
                 </div>
               </div>
             </div>
           </div>
+          {/**  more about OUR AYURVEDIC APPROACH */}
           <div className="ayurvedic-aproach py-[60px] flex flex-col items-center">
             <div className="header  flex flex-col items-center gap-[10px]">
               <p className="text-[32px] text-green font-bold font-Roboto px-[30px]">
@@ -1019,6 +1041,7 @@ function Home() {
               <img src={dot} alt="" className="w-[76px] h-[9px]" />
             </div>
           </div>
+          {/** section to display people experiance and reviews */}
           <div className="testimonial flex flex-col items-center bg-cream py-[40px]">
             <div className="header">
               <p className="text-[32px] text-green font-bold font-Roboto px-[30px]">
@@ -1180,6 +1203,7 @@ function Home() {
               <img src={dot} alt="" className="w-[76px] h-[9px]" />
             </div>
           </div>
+          {/** AYURVEDIC EXPERTS */}
           <div className="instructor flex flex-col py-[40px]">
             <div className="header px-[30px]">
               <p className="text-[32px] text-green font-bold font-Roboto">
@@ -1249,6 +1273,7 @@ function Home() {
               <img src={dot} alt="" className="w-[76px] h-[9px]" />
             </div>
           </div>
+          {/** Advetisment of Mobile Apps*/}
           <div className="download flex flex-col gap-[20px] items-center h-[1000px] pt-[30px] px-[20px] bg-cream">
             <div className="left w-[100%] h-[484px]">
               <p className="text-[32px]   font-bold text-green font-Roboto">
@@ -1282,6 +1307,7 @@ function Home() {
               </div>
             </div>
           </div>
+          {/** Quick Links */}
           <div className="footer py-[40px] w-full flex  flex-col justify-center items-center bg-lightestGreen font-Roboto gap-[30px] ">
             <div className="left flex flex-col w-[80%] items-start text-[18px] gap-[10px] ">
               <p className="text-green font-bold">Get In Touch</p>

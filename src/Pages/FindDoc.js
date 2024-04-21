@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import DocCard from "../Components/DocCard";
-import cross from '../assests/cross.png'
+import cross from "../assests/cross.png";
 
 function FindDoc() {
   return (
     <div className="main sm:w-[100%]">
-      
+      {/** Page for Searching consultants */}
+
+      {/** section for the head tagline of finding doctors  */}
       <div className="find-doc-section h-[221px] flex flex-col justify-evenly pt-[20px] items-center relative overflow-hidden bg-sky sm:w-[100%] sm:justify-center sm:gap-[30px] sm:h-[300px]">
         <div className="circle w-[184px] h-[184px] absolute left-[284px] top-[113px] bg-circle rounded-full z-0"></div>
         <div className="circle w-[184px] h-[184px] absolute left-[145px] top-[-100px]   bg-circle rounded-full z-0"></div>
@@ -30,6 +32,7 @@ function FindDoc() {
           </div>
         </div>
       </div>
+      {/** filter section */}
       <div className="filter-section h-[72px] flex items-center justify-center gap-[32px] border-b-[1px] border-bottom font-nunito sm:w-[100%] sm:flex-wrap sm:justify-start sm:px-[20px] sm:py-[20px]">
         <div className="left-filter-section">
           <select className=" w-[148px] h-[38px]  rounded-[7px] px-2 bg-inputBg text-inputText font-medium ">
@@ -51,17 +54,17 @@ function FindDoc() {
           </select>
         </div>
       </div>
-
+      {/** selected filters */}
       <div className="filter-icons w-[1240px] flex justify-end m-auto mt-[50px] px-[30px] sm:w-[100%] sm:mt-[200px]">
-        <div className="selected-filter w-[570px] h-[40px] flex justify-evenly font-inter sm:justify-end">
-          <div className="icon h-[40px] rounded-[31px] w-[139px] flex justify-center items-center border-[1px] gap-2 bg-selected text-title">
+        <div className="selected-filter w-[570px] h-[40px] flex justify-evenly font-inter sm:justify-end sm:gap-2">
+          <div className="icon h-[40px] rounded-[31px] w-[139px] flex justify-center items-center border-[1px] gap-2 bg-selected sm:text-[14px] text-title">
             <p>Hair care</p>
             <div className="img-wrapper w-[12px] h-[12px]">
               <img src={cross} alt="" className="w-[12px] h-[12px]" />
             </div>
           </div>
-          <div className="icon h-[40px] rounded-[31px] w-[126px] flex justify-center items-center border-[1px] gap-2 bg-selected text-title">
-          <p>Female</p>
+          <div className="icon h-[40px] rounded-[31px] w-[126px] flex justify-center items-center border-[1px] gap-2 bg-selected sm:text-[14px] text-title">
+            <p>Female</p>
             <div className="img-wrapper w-[12px] h-[12px]">
               <img src={cross} alt="" className="w-[12px] h-[12px]" />
             </div>
@@ -80,7 +83,7 @@ function FindDoc() {
           </div>
         </div>
       </div>
-
+      {/** card of doctors   */}
       <div className="card-content w-[1240px] m-auto py-[30px] flex justify-evenly mt-[30px] mb-[100px] sm:w-[100%] sm:items-center sm:flex-col sm:gap-[20px]">
         <DocCard />
         <DocCard />
