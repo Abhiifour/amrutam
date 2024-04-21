@@ -127,14 +127,14 @@ function DocPage() {
                   </div>
                 </div>
 
-                <div className="language w-[490px] h-[40px] flex  mt-[30px] ml-[40px] justify-evenly items-center font-nunito sm:text-[16px] sm:w-[90%] sm:flex-wrap sm:ml-[10px] sm:justify-start sm:gap-2">
-                  <p className="text-[20px] text-title font-medium sm:text-[16px]">
+                <div className="language w-[490px] h-[40px] flex  mt-[30px] ml-[40px] justify-evenly items-center font-nunito sm:text-[16px] sm:w-[100%] sm:flex-wrap sm:ml-[10px] sm:justify-start sm:gap-2">
+                  <p className="text-[20px] text-title font-medium sm:text-[15px]">
                     Language Spoken
                   </p>
-                  <div className="select text-[20px] rounded-[16px] px-[20px] flex items-center bg-language py-[5px] text-langText sm:text-[16px]">
+                  <div className="select text-[20px] rounded-[16px] px-[20px] flex items-center bg-language py-[5px] text-langText sm:text-[15px]">
                     English
                   </div>
-                  <div className="select text-[20px] rounded-[16px] px-[20px] flex items-center  bg-language py-[5px]  text-langText sm:text-[16px]">
+                  <div className="select text-[20px] rounded-[16px] px-[20px] flex items-center  bg-language py-[5px]  text-langText sm:text-[15px]">
                     Hindi
                   </div>
                   <div className="select text-[20px] rounded-[16px] px-[20px] flex items-center  bg-language py-[5px]  text-langText sm:text-[16px] sm:hidden">
@@ -427,7 +427,7 @@ function DocPage() {
               </div>
             </div>
             <div className="right w-[564px] sm:w-[100%]">
-              <div className="card w-[564px] h-[950px] border-[1px] rounded-[29px] flex flex-col items-center py-[30px] gap-[30px] sm:w-[90%] sm:m-auto sm:h-[1100px]">
+              <div className="card w-[564px] h-[950px] border-[1px] rounded-[29px] flex flex-col items-center py-[30px] gap-[30px] sm:w-[90%] sm:m-auto sm:h-[1050px] sm:mb-[50px]">
                 <div className="header w-[530px] h-[56px] border-[1px] rounded-[15px] flex items-center justify-between px-[30px] sm:w-[95%] sm:px-[10px] ">
                   <p className="text-[20px] font-semibold text-title font-nunito">
                     Appointment Fee
@@ -557,7 +557,7 @@ function DocPage() {
                 </div>
 
                 <div className="book-button w-[470px] h-[60px]  rounded-[8px] flex justify-center items-center bg-green sm:w-[60%]">
-                  <p className="text-[20px] text-heroText2 font-medium font-inter sm:text-[18px]">
+                  <p className="text-[20px] text-heroText2 font-medium font-inter sm:text-[16px]">
                     Make An Appointment
                   </p>
                 </div>

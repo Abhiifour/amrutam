@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
-import herobanner from "../assests/hero.png";
+import herobanner from "../assests/hero.jpg";
 import icon1 from "../assests/icon1.png";
 import icon2 from "../assests/icon2.png";
 import icon3 from "../assests/icon3.png";
@@ -13,9 +13,9 @@ import yoga4 from "../assests/yoga4.png";
 import yoga5 from "../assests/yoga5.png";
 import yoga6 from "../assests/yoga6.png";
 import add1 from "../assests/add1.jpg";
-import add2 from "../assests/add2.png";
+import add2 from "../assests/add2.jpg";
 import add3 from "../assests/add3.jpg";
-import book from "../assests/booknow.png";
+import book from "../assests/booknow.jpg";
 import star from "../assests/star.png";
 import dot from "../assests/dot.png";
 import doc from "../assests/docImg.png";
@@ -34,11 +34,11 @@ import { useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate();
   return (
-    <div className="home-main w-full">
+    <div className="home-main w-full transition-all">
       <div className="web  block sm:hidden ">
         <div className="hero-section h-[640px] flex relative">
-          <div className="left w-[650px] bg-hero"></div>
-          <div className="img-wrapper w-[870px] h-[640px]">
+          <div className="left w-[650px] bg-hero transition-all"></div>
+          <div className="img-wrapper w-[870px] h-[640px] transition-all ">
             <img src={herobanner} alt="" className="w-[870px] h-[640px]" />
           </div>
 
@@ -60,56 +60,53 @@ function Home() {
                 Doctors Anytime, anywhere.
               </p>
               <div
-                className="button w-[300px] h-[60px] rounded-[16px] flex justify-center items-center  mt-[20px] bg-green cursor-pointer"
+                className="button w-[300px] h-[60px] rounded-[16px] flex justify-center text-[20px] items-center  mt-[20px] hover:font-bold text-heroText2 font-inter hover:text-green bg-green cursor-pointer transition hover:bg-white "
                 onClick={() => navigate("/Find")}
               >
-                <p className="text-[20px] text-heroText2 font-inter">
-                  BOOK AN APPOINTMENT
-                </p>
+               BOOK AN APPOINTMENT
               </div>
             </div>
           </div>
         </div>
         <div className="icons h-[147px]  flex justify-center items-center gap-[10px] bg-cream font-nunito">
-          <div className="box w-[283px] flex">
-            <div className="img-wrapper w-[80px] h-[60px]">
-              <img src={icon1} alt="" className="w-[80px] h-[60px]" />
+          <div className="box w-[283px] flex items-center">
+            <div className="img-wrapper w-[140px] h-[80px]">
+              <img src={icon1} alt="" className="w-[140px] h-[80px]" />
             </div>
             <p className="text-[18px] text-start text-green font-semibold">
-              convenient online & In-clinic consultations
+              Convenient Online & In-Clinic Consultations
             </p>
           </div>
-          <div className="box w-[283px] flex">
-            <div className="img-wrapper  w-[70px] h-[60px]">
-              <img src={icon2} alt="" className=" w-[70px] h-[60px]" />
+          <div className="box w-[283px] flex items-center">
+            <div className="img-wrapper  w-[100px] h-[80px]">
+              <img src={icon2} alt="" className=" w-[100px] h-[80px]" />
             </div>
             <p className="text-[18px] text-start text-green font-semibold">
-              Safe and effective treatment
+              Safe and Effective Treatment
             </p>
           </div>
-          <div className="box w-[283px] flex">
-            <div className="img-wrapper w-[80px] h-[60px]">
-              <img src={icon3} alt="" className=" w-[80px] h-[60px]" />
+          <div className="box w-[283px] flex items-center">
+            <div className="img-wrapper w-[120px] h-[80px]">
+              <img src={icon3} alt="" className=" w-[120px] h-[80px]" />
             </div>
             <p className="text-[18px] text-start text-green font-semibold">
               Experienced Ayurvedic Practitioners
             </p>
           </div>
-          <div className="box w-[283px] flex ">
-            <div className="img-wrapper w-[80px] h-[60px]">
-              <img src={icon4} alt="" className=" w-[80px] h-[60px]" />
+          <div className="box w-[283px] flex items-center">
+            <div className="img-wrapper w-[120px] h-[80px]">
+              <img src={icon4} alt="" className=" w-[120px] h-[80px]" />
             </div>
             <p className="text-[18px] text-start font-nunito  text-green font-semibold">
-              personalized Treatment Plans & Guidance
+              Personalized Treatment Plans & Guidance
             </p>
           </div>
         </div>
 
-        <div className="yogo-banner h-[840px] flex flex-col items-center gap-[50px] pt-[40px]">
+        <div className="yogo-banner h-[840px] flex flex-col items-center gap-[50px] pt-[40px] ">
           <div className="header w-[800px] h-[160px] flex flex-col items-center gap-[20px]">
             <div className="text-[48px] text-green font-Roboto font-bold  ">
               <p className="underline decoration-[5px]  decoration-underline px-[20px] underline-offset-2">
-                
                 Discover Ayurveda’s Magic With Us
               </p>
             </div>
@@ -120,7 +117,7 @@ function Home() {
             </p>
           </div>
           <div className="bottom flex justify-center h-[600px] w-full relative pt-[20px]">
-            <div className="img-wrapper w-[500px] h-[522px]">
+            <div className="img-wrapper w-[500px] h-[522px] transition-all">
               <img src={yoga} alt="" className="w-[500px] h-[522px]" />
             </div>
 
