@@ -35,7 +35,7 @@ function Home() {
   const navigate = useNavigate();
   return (
     <div className="home-main w-full">
-      <div className="web sm:hidden ">
+      <div className="web  block sm:hidden ">
         <div className="hero-section h-[640px] flex relative">
           <div className="left w-[650px] bg-hero"></div>
           <div className="img-wrapper w-[870px] h-[640px]">
@@ -939,8 +939,8 @@ function Home() {
                 <p className="text-[32px]  text-creamText font-Roboto font-bold">
                   Ready to restore harmony in your mind, body and spirit?
                 </p>
-                <div className="book-button px-[40px] py-[24px] rounded-[16px] flex justify-center items-center bg-green shadow-md">
-                  <p className="text-[20px] text-heroText2 font-inter">
+                <div className="book-button px-[20px] py-[24px] rounded-[16px] flex justify-center items-center bg-green shadow-md">
+                  <p className="text-[18px] text-heroText2 font-inter">
                     Book a Consultation
                   </p>
                 </div>
@@ -1013,8 +1013,8 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="img-wrapper w-[76px] h-[12px] mt-[50px]">
-              <img src={dot} alt="" className="w-[76px] h-[12px]" />
+            <div className="img-wrapper w-[76px] h-[9px] mt-[50px]">
+              <img src={dot} alt="" className="w-[76px] h-[9px]" />
             </div>
           </div>
           <div className="testimonial flex flex-col items-center bg-cream py-[40px]">
@@ -1024,14 +1024,14 @@ function Home() {
               </p>
             </div>
             <div className="testimonial-card w-[90%] h-[370px] overflow-hidden  mt-[80px]">
-              <div className="flex w-[1228px] h-[370px] gap-[32px]">
-                <div className="card w-[300px] h-[370px] rounded-[20px] border-[1px] shadow-md bg-white font-nunito">
+              <div className="flex w-[1228px] h-[370px] gap-[20px]">
+                <div className="card w-[320px] h-[370px] rounded-[20px] border-[1px] shadow-md bg-white font-nunito">
                   <div className="top h-[54px] flex items-center px-[20px] bg-blue rounded-t-[20px]">
                     <p className="text-[18px] font-semibold text-title">
                       Consulted for Skin
                     </p>
                   </div>
-                  <div className="content flex flex-col gap-[20px] w-[290px] m-auto mt-[30px]">
+                  <div className="content flex flex-col gap-[20px] w-[290px] m-auto mt-[30px]  pl-[10px]">
                     <div className="profile flex justify-between">
                       <div className="left flex gap-[10px]">
                         <div className="profile-pic w-[60px] h-[60px] rounded-full bg-stone-600"></div>
@@ -1074,13 +1074,13 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="card w-[300px] h-[370px] rounded-[20px] border-[1px] shadow-md bg-white font-nunito">
+                <div className="card w-[320px] h-[370px] rounded-[20px] border-[1px] shadow-md bg-white font-nunito ">
                   <div className="top h-[54px] flex items-center px-[20px] rounded-t-[20px] bg-lightSky">
                     <p className="text-[18px] font-semibold text-title">
                       Consulted for Hair
                     </p>
                   </div>
-                  <div className="content flex flex-col gap-[20px] w-[290px] m-auto mt-[30px]">
+                  <div className="content flex flex-col gap-[20px] w-[290px] m-auto mt-[30px]  pl-[10px]">
                     <div className="profile flex justify-between">
                       <div className="left flex gap-[10px]">
                         <div className="profile-pic w-[60px] h-[60px] rounded-full bg-stone-600"></div>
@@ -1123,13 +1123,13 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="card w-[300px] h-[370px] rounded-[20px] border-[1px] shadow-md bg-white font-nunito">
+                <div className="card w-[320px] h-[370px] rounded-[20px] border-[1px] shadow-md bg-white font-nunito">
                   <div className="top h-[54px] flex items-center px-[20px] rounded-t-[20px] bg-lightSky">
                     <p className="text-[18px] font-semibold text-title">
                       Consulted for Hair
                     </p>
                   </div>
-                  <div className="content flex flex-col gap-[20px] w-[290px] m-auto mt-[30px]">
+                  <div className="content flex flex-col gap-[20px] w-[290px] m-auto mt-[30px]  pl-[10px]">
                     <div className="profile flex justify-between">
                       <div className="left flex gap-[10px]">
                         <div className="profile-pic w-[60px] h-[60px] rounded-full bg-stone-600"></div>
