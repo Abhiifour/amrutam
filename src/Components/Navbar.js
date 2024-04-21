@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className="nav-main flex items-center justify-center  h-[94px] bg-cream sm:w-[100%] sm:h-[104px]">
       <div className="inner-nav w-[1232px] h-[56px] flex items-center justify-between sm:w-[100%]">
-        <div className="nav-left flex w-[669px] h-[49px] gap-[80px] items-center sm:w-[100%] sm:h-[104px]  sm:gap-[70px]">
+        <div className="nav-left flex w-[669px] h-[49px] gap-[80px] items-center sm:w-[100%] sm:h-[104px]  sm:gap-[60px]">
         <div className="hamburger hidden sm:block px-[20px]">
           <div className="img-wrapper w-[32px] h-[14px]">
             <img src={ham} alt="" className="w-[32px] h-[14px]" />

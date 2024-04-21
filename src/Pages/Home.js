@@ -107,9 +107,12 @@ function Home() {
 
         <div className="yogo-banner h-[840px] flex flex-col items-center gap-[50px] pt-[40px]">
           <div className="header w-[800px] h-[160px] flex flex-col items-center gap-[20px]">
-            <p className="text-[48px] text-green font-Roboto font-bold">
-              Discover Ayurveda’s magic with us
-            </p>
+            <div className="text-[48px] text-green font-Roboto font-bold  ">
+              <p className="underline decoration-[5px]  decoration-underline px-[20px] underline-offset-2">
+                
+                Discover Ayurveda’s Magic With Us
+              </p>
+            </div>
             <p className="text-[18px] w-[640px] text-subtitle font-nunito">
               Ayurvedic treatment aims to balance your body and mind, bringing
               harmony and vitality. It's like a journey to better health using
@@ -203,7 +206,7 @@ function Home() {
           </div>
         </div>
         <div className="know-more-section h-[850px] bg-cream pt-[60px]">
-          <p className="text-[48px] text-green font-Roboto font-bold">
+          <p className="text-[48px] text-green font-Roboto font-bold underline decoration-[5px]  decoration-underline px-[20px] underline-offset-2">
             What sets Ayurvedic consultations apart?
           </p>
           <div className="content-box w-[1240px] h-[579px] m-auto mt-[60px] flex flex-wrap gap-[16px] font-nunito">
@@ -274,7 +277,7 @@ function Home() {
         </div>
         <div className="ayurvedic-approach h-[750px] flex flex-col items-center w-full pt-[80px] gap-[70px]">
           <div className="header w-[800px] h-[160px] flex flex-col items-center">
-            <p className="text-[48px] text-green font-semibold font-Roboto">
+            <p className="text-[48px] text-green font-semibold font-Roboto underline decoration-[5px]  decoration-underline px-[20px] underline-offset-2">
               Our Ayurvedic Approach
             </p>
             <p className="text-[18px] w-[670px] text-subtitle  font-nunito">
@@ -339,7 +342,7 @@ function Home() {
         </div>
         <div className="testimonial h-[700px] w-full flex flex-col py-[80px] items-center bg-cream ">
           <div className="header">
-            <p className="text-[48px] text-green font-semibold font-Roboto ">
+            <p className="text-[48px] text-green font-semibold font-Roboto underline decoration-[5px]  decoration-underline px-[20px] underline-offset-2">
               Stories From Our Valued Customers!
             </p>
           </div>
@@ -496,13 +499,13 @@ function Home() {
             <img src={dot} alt="" className="w-[76px] h-[9px]" />
           </div>
         </div>
-        <div className="meet-instructor w-full h-[800px]  flex flex-col pt-[60px] items-center">
+        <div className="meet-instructor w-full h-[840px]  flex flex-col pt-[60px] items-center ">
           <div className="header">
-            <p className="text-[48px] text-green font-semibold font-Roboto">
+            <p className="text-[48px] text-green font-semibold font-Roboto underline decoration-[5px]  decoration-underline px-[20px] underline-offset-2">
               Meet Our Ayurveda Experts
             </p>
           </div>
-          <div className="content w-full mt-[50px] flex gap-[40px] items-center justify-center">
+          <div className="content w-full mt-[80px] flex gap-[40px] items-center justify-center">
             <div className="left w-[72px] h-[69px]">
               <img src={leftArrow} alt="" className="w-[72px] h-[69px]" />
             </div>
@@ -748,37 +751,39 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="icons flex flex-col justify-center items-center px-[60px] font-bold py-[20px] bg-cream font-nunito">
-            <div className="box w-full flex py-[16px] gap-2 items-center">
-              <div className="img-wrapper w-[80px] h-[60px]">
-                <img src={icon1} alt="" className="w-[80px] h-[60px]" />
+          <div className="icons flex flex-col justify-center items-center  font-bold py-[20px] bg-cream font-nunito w-[100%] border-y-[0.5px]">
+            <div className="box w-full flex py-[16px] gap-2 items-center px-[40px] border-b-[0.5px]">
+              <div className="img-wrapper w-[120px] h-[80px]">
+                <img src={icon1} alt="" className="w-[120px] h-[80px]" />
               </div>
+
               <p className="text-[18px] text-start text-green font-semibold">
-                convenient online & In-clinic consultations
+                Convenient Online & In-Clinic Consultations
               </p>
             </div>
-            <div className="box w-full flex  py-[16px] items-center">
-              <div className="img-wrapper  w-[70px] h-[60px]">
-                <img src={icon2} alt="" className=" w-[70px] h-[60px]" />
+
+            <div className="box w-full flex  py-[16px] items-center px-[40px] border-b-[0.5px]">
+              <div className="img-wrapper  w-[80px] h-[80px]">
+                <img src={icon2} alt="" className=" w-[80px] h-[80px]" />
               </div>
               <p className="text-[18px] text-start text-green font-semibold">
-                Safe and effective treatment
+                Safe And Effective Treatment
               </p>
             </div>
-            <div className="box w-full flex  py-[16px] items-center">
-              <div className="img-wrapper w-[80px] h-[60px]">
-                <img src={icon3} alt="" className=" w-[80px] h-[60px]" />
+            <div className="box w-full flex  py-[16px] items-center px-[40px] border-b-[0.5px]">
+              <div className="img-wrapper w-[100px] h-[80px]">
+                <img src={icon3} alt="" className=" w-[100px] h-[80px]" />
               </div>
               <p className="text-[18px] text-start text-green font-semibold">
                 Experienced Ayurvedic Practitioners
               </p>
             </div>
-            <div className="box w-full flex  py-[16px] gap-2 items-center">
-              <div className="img-wrapper w-[80px] h-[60px]">
-                <img src={icon4} alt="" className=" w-[80px] h-[60px]" />
+            <div className="box w-full flex  py-[16px] gap-2 items-center px-[40px]">
+              <div className="img-wrapper w-[120px] h-[80px]">
+                <img src={icon4} alt="" className=" w-[120px] h-[80px]" />
               </div>
               <p className="text-[18px] text-start font-nunito  text-green font-semibold">
-                personalized Treatment Plans & Guidance
+                Personalized Treatment Plans & Guidance
               </p>
             </div>
           </div>
@@ -786,7 +791,7 @@ function Home() {
             <p className="text-[32px] text-green font-Roboto font-bold px-[20px]">
               Discover Ayurveda’s Magic With Us
             </p>
-            <p className="text-[14px] w-full px-[30px] text-subtitle font-nunito mt-[20px]">
+            <p className="text-[14px] w-full px-[30px] text-subtitle font-nunito ">
               Ayurvedic treatment aims to balance your body and mind, bringing
               harmony and vitality. It's like a journey to better health using
               ancient wisdom, a totally effective approach for a better life.
@@ -930,11 +935,11 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="banner h-[500px] relative ">
+          <div className="banner h-[500px] relative mt-[40px]">
             <div className="img h-[500px] w-[100%]">
               <img src={book} alt="" className="h-[500px] w-[100%]" />
             </div>
-            <div className="text-content h-[500px] absolute w-full top-0 flex justify-center px-[60px] items-center bg-gradient-to-r from-grad1 via-grad2 to-grad3">
+            <div className="text-content h-[500px] absolute w-full top-0 flex justify-center px-[40px] items-center bg-gradient-to-r from-grad1 via-grad2 to-grad3">
               <div className="box flex flex-col justify-center items-center gap-[40px]">
                 <p className="text-[32px]  text-creamText font-Roboto font-bold">
                   Ready to restore harmony in your mind, body and spirit?
@@ -952,14 +957,14 @@ function Home() {
               <p className="text-[32px] text-green font-bold font-Roboto px-[30px]">
                 Our Ayurvedic Approach
               </p>
-              <p className="text-[16px]  text-subtitle  font-nunito px-[20px]">
+              <p className="text-[16px]  text-subtitle  font-nunito px-[30px] mt-[20px]">
                 At Amrutam we follow a unique and personalized approach to
                 healing. Our expert practitioners begin each treatment process
                 by conducting a thorough analysis of the patient’s body type,
                 medical history, and current health conditions.
               </p>
             </div>
-            <div className="card-section w-[90%] m-auto h-[348px]  gap-[12px] overflow-hidden mt-[30px]  ">
+            <div className="card-section w-[90%] m-auto h-[354px]  gap-[12px] overflow-hidden mt-[30px]  ">
               <div className=" flex w-[1600px] gap-[20px]">
                 <div className="box  bg-cream px-[20px] py-[20px] w-[300px] h-[348px] shadow-md flex flex-col items-center gap-[10px] rounded-[20px] border-t-[5px] border-green font-nunito">
                   <div className="circle w-[70px] h-[70px] rounded-full bg-lightGreen border-[1px] border-green">
@@ -1023,8 +1028,8 @@ function Home() {
                 Stories From Our Valued Customers!
               </p>
             </div>
-            <div className="testimonial-card w-[90%] h-[370px] overflow-hidden  mt-[80px]">
-              <div className="flex w-[1228px] h-[370px] gap-[20px]">
+            <div className="testimonial-card w-[90%] h-[370px] overflow-hidden  mt-[60px]">
+              <div className="flex w-[1228px] h-[380px] gap-[20px]">
                 <div className="card w-[320px] h-[370px] rounded-[20px] border-[1px] shadow-md bg-white font-nunito">
                   <div className="top h-[54px] flex items-center px-[20px] bg-blue rounded-t-[20px]">
                     <p className="text-[18px] font-semibold text-title">
@@ -1174,8 +1179,8 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="img-wrapper w-[76px] h-[12px] mt-[50px]">
-              <img src={dot} alt="" className="w-[76px] h-[12px]" />
+            <div className="img-wrapper w-[76px] h-[9px] mt-[50px]">
+              <img src={dot} alt="" className="w-[76px] h-[9px]" />
             </div>
           </div>
           <div className="instructor flex flex-col py-[40px]">
@@ -1187,7 +1192,7 @@ function Home() {
 
             <div className="content w-[90%]  m-auto mt-[50px] flex gap-[40px] items-center justify-center">
               <div className="card-box w-[90%] h-[440px] overflow-hidden ">
-                <div className="flex gap-[46px]">
+                <div className="flex gap-[46px] justify-evenly">
                   <div className="card w-[295px] h-[440px] rounded-[40px] flex flex-col items-center pt-[40px] justify-between bg-cream font-nunito">
                     <div className="main-content w-[250px] h-[308px] flex flex-col items-center justify-evenly">
                       <div className="img-box w-[150px] h-[150px] relative">
@@ -1243,92 +1248,93 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="img-wrapper w-[76px] h-[12px] mt-[50px] m-auto">
-              <img src={dot} alt="" className="w-[76px] h-[12px]" />
+            <div className="img-wrapper w-[76px] h-[9px] mt-[50px] m-auto">
+              <img src={dot} alt="" className="w-[76px] h-[9px]" />
             </div>
           </div>
           <div className="download flex flex-col gap-[20px] items-center h-[1000px] pt-[30px] px-[20px] bg-cream">
-          <div className="left w-[100%] h-[484px]">
-            <p className="text-[32px]   font-bold text-green font-Roboto">
-              Amrutam Home App
-            </p>
-            <p className="text-[14px] mt-[20px] text-lightText font-Roboto">
-              The Amrutam Home App is your one-stop app for all things Ayurveda!
-              Apart from mimicking the significant characteristics of our
-              website, this app offers a wide range of additional features.
-            </p>
-            <div className="right w-[100%] h-[328px] mt-[20px]">
-            <img src={mobile} alt="" className="w-[100%] h-[328px]" />
-          </div>
-            <p className="text-[20px] px-[20px] mt-[20px] text-title font-semibold font-Roboto">
-              Get A Diet & Lifestyle Consultation With Ayurvedic Experts Across
-              The Globe
-            </p>
-
-            <p className="text-[36px]  mt-[60px] font-bold text-title font-Roboto">
-              Get The App Now
-            </p>
-
-            <div className="image-set flex  flex-col justify-between items-center gap-[20px] mt-[40px]">
-              <div className="img-wrapper w-[90%] h-[80px]">
-                <img src={google} alt="" className="w-[100%] h-[80px]" />
+            <div className="left w-[100%] h-[484px]">
+              <p className="text-[32px]   font-bold text-green font-Roboto">
+                Amrutam Home App
+              </p>
+              <p className="text-[14px] mt-[20px] text-lightText font-Roboto">
+                The Amrutam Home App is your one-stop app for all things
+                Ayurveda! Apart from mimicking the significant characteristics
+                of our website, this app offers a wide range of additional
+                features.
+              </p>
+              <div className="right w-[100%] h-[328px] mt-[20px]">
+                <img src={mobile} alt="" className="w-[100%] h-[328px]" />
               </div>
-              <div className="img-wrapper w-[90%] h-[80px]">
-                <img src={apple} alt="" className="w-[100%] h-[80px]" />
+              <p className="text-[20px] px-[20px] mt-[20px] text-title font-semibold font-Roboto">
+                Get A Diet & Lifestyle Consultation With Ayurvedic Experts
+                Across The Globe
+              </p>
+
+              <p className="text-[36px]  mt-[60px] font-bold text-title font-Roboto">
+                Get The App Now
+              </p>
+
+              <div className="image-set flex  flex-col justify-between items-center gap-[20px] mt-[40px]">
+                <div className="img-wrapper w-[90%] h-[80px]">
+                  <img src={google} alt="" className="w-[100%] h-[80px]" />
+                </div>
+                <div className="img-wrapper w-[90%] h-[80px]">
+                  <img src={apple} alt="" className="w-[100%] h-[80px]" />
+                </div>
               </div>
             </div>
-          </div>
           </div>
           <div className="footer py-[40px] w-full flex  flex-col justify-center items-center bg-lightestGreen font-Roboto gap-[30px] ">
-          <div className="left flex flex-col w-[80%] items-start text-[18px] gap-[10px] ">
-            <p className="text-green font-bold">Get In Touch</p>
-            <p>support@amrutam.co.in</p>
-            <p className="text-start w-[300px]">
-              Amrutam Pharmaceuticals Pvt Ltd., chitragupt ganj, Nai Sadak,
-              Lashkar, Gwalior - 474001
-            </p>
-            <p>+91 9713171999</p>
-            <div className="imgwrapper w-[100%] ">
-              <img src={social} alt="" className="w-[100%] " />
+            <div className="left flex flex-col w-[80%] items-start text-[18px] gap-[10px] ">
+              <p className="text-green font-bold">Get In Touch</p>
+              <p>support@amrutam.co.in</p>
+              <p className="text-start w-[300px]">
+                Amrutam Pharmaceuticals Pvt Ltd., chitragupt ganj, Nai Sadak,
+                Lashkar, Gwalior - 474001
+              </p>
+              <p>+91 9713171999</p>
+              <div className="imgwrapper w-[100%] ">
+                <img src={social} alt="" className="w-[100%] " />
+              </div>
             </div>
-          </div>
-          <div className="box flex flex-col gap-[10px] w-[80%]">
-            <p className="text-[18px]  text-start font-bold text-green">
-              Information
-            </p>
-            <div className="links text-footerText flex flex-col gap-[2px]">
-              <p className="text-[18px] text-start">About Us</p>
-              <p className="text-[18px] text-start ">Terms and Conditions</p>
-              <p className="text-[18px] text-start">Privacy Policy</p>
-              <p className="text-[18px] text-start">
-                Privacy Policy for Mobile Apps
+            <div className="box flex flex-col gap-[10px] w-[80%]">
+              <p className="text-[18px]  text-start font-bold text-green">
+                Information
               </p>
-              <p className="text-[18px] text-start">
-                Shipping and Return Policy
-              </p>
-              <p className="text-[18px] text-start">International Delivery</p>
-              <p className="text-[18px] text-start">
-                For Business, Hotel and Resorts
-              </p>
+              <div className="links text-footerText flex flex-col gap-[2px]">
+                <p className="text-[18px] text-start">About Us</p>
+                <p className="text-[18px] text-start ">Terms and Conditions</p>
+                <p className="text-[18px] text-start">Privacy Policy</p>
+                <p className="text-[18px] text-start">
+                  Privacy Policy for Mobile Apps
+                </p>
+                <p className="text-[18px] text-start">
+                  Shipping and Return Policy
+                </p>
+                <p className="text-[18px] text-start">International Delivery</p>
+                <p className="text-[18px] text-start">
+                  For Business, Hotel and Resorts
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="right w-[80%]">
-            <p className="text-green font-bold text-[18px] text-start">
-              Subscribe to our Newsletter and join Amrutam Family today!
-            </p>
-            <div className="inputbox flex rounded-[40px] overflow-hidden w-[100%] border-[1px] border-black mt-[40px]">
-              <input
-                type="text"
-                placeholder="Your Email Address"
-                className="bg-inherit placeholder-black px-[10px] text-[16px] py-[15px] w-[60%] "
-              />
-              <div className="button bg-black text-[18px] w-[40%] text-white font-semibold flex justify-center items-center ">
-                Subscribe
+            <div className="right w-[80%]">
+              <p className="text-green font-bold text-[18px] text-start">
+                Subscribe to our Newsletter and join Amrutam Family today!
+              </p>
+              <div className="inputbox flex rounded-[40px] overflow-hidden w-[100%] border-[1px] border-black mt-[40px]">
+                <input
+                  type="text"
+                  placeholder="Your Email Address"
+                  className="bg-inherit placeholder-black px-[10px] text-[16px] py-[15px] w-[60%] "
+                />
+                <div className="button bg-black text-[18px] w-[40%] text-white font-semibold flex justify-center items-center ">
+                  Subscribe
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </div>

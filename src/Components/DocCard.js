@@ -23,7 +23,7 @@ function DocCard() {
               </div>
             </div>
           </div>
-          <div className="name text-[32px] font-bold text-name font-nunito">
+          <div className="name text-[32px] font-bold text-name font-nunito sm:text-[26px]">
             Dr. Prerna Narang
           </div>
           <div className="detail-box flex flex-col gap-[16px]">

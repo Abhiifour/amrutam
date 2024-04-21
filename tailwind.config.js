@@ -73,6 +73,7 @@ module.exports = {
         timing: "rgba(19, 19, 19, 1)",
         bgLightGreen: "rgba(242, 251, 242, 1)",
         findMorebg: "rgba(219, 227, 220, 0.39)",
+        underline: "rgba(195, 208, 196, 1)",
       },
     },
   },
